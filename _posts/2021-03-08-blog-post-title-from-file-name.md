@@ -22,6 +22,29 @@ FROM cleaned_rental_datasets.compiled_rentals
 GROUP BY city
 ORDER BY TotalRentals DESC
 ```
-
 <img width="362" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/f9424127-70c6-4364-bac4-d4c7242808aa">
 
+#### Query 3: FROM Subquery (with ROUND)
+Queries in SQL can be placed inside another query. The inner query is called a subquery and is executed first, before the outer query executes based on the inner query's results. Subqueries in the FROM clause are sometimes called derived tables or table expressions because the outer query will then use the results as a data source. Meanwhile, the ROUND function is self-explanatory and rounds your result to a specified decimal.
+
+```sql
+SELECT city, housing_type, temp_table.average_rent
+FROM (
+  SELECT city, housing_type, ROUND(AVG(rent), 2) AS average_rent
+  FROM cleaned_rental_datasets.compiled_rentals
+  GROUP BY city, housing_type
+) AS temp_table
+ORDER BY average_rent 
+```
+<img width="468" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/2d7e4b57-79d2-489b-badf-ebec47d59bbf">
+
+Although this example demonstrates the process of creating a derived table and calling its specific columns, the query can be simplified as shown:
+
+```sql
+SELECT city, housing_type, ROUND(AVG(rent), 2) AS average_rent
+FROM cleaned_rental_datasets.compiled_rentals
+GROUP BY city, housing_type
+ORDER BY average_rent 
+```
+
+Nevertheless, the results indicate that Scarborough renting is the lowest on average with Toronto being the most expensive. Meanwhile, apartment rentals are the cheaper option in all cities. Considering apartments and condominiums are similar in terms of what they offer, renting an apartment in any city will be the more sensible option for individuals with a smaller budget or just looking to save where they can.
