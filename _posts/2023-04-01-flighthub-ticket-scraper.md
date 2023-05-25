@@ -1,7 +1,9 @@
 # FlightHub Ticket Scraper
 As someone who flies frequently, I decided to write a program that emails me the best offers in a set time interval. I noticed that email 
-notifications send the best deal at most once a day, and that I would sometimes find better offers when I browse at other times. The code 
-is as follows:
+notifications don't always send the best offers, and that I would sometimes find better offers when I browse at various times. This project
+was also to help consolidate the python fundamentals I recently learnt. The code is as follows:
+
+---
 
 ```python
 from selenium import webdriver
