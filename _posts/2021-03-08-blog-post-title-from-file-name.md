@@ -4,9 +4,8 @@ This is a notebook to track the SQL concepts that I've learnt with the queries a
 
 ---
 
-### This is a header
+#### QUERY 1: SELECT DISTINCT![image](https://github.com/jonn1723/jonn1723.github.io/assets/127183309/d2aaf238-9c1a-4d09-b5bc-662407497ef1)
 
-#### Some T-SQL Code
 
 ```tsql
 SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
