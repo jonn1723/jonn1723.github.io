@@ -13,13 +13,11 @@ FROM cleaned_rental_datasets.compiled_rentals
 ```
 
 #### Query 2: COUNT (with GROUP BY, ORDER BY, and ALIASES)
+The COUNT operator returns the number of rows that match your specified criteria while the ORDER BY operator sorts your results in order by the specified column. Meanwhile, the GROUP BY operator groups like-values and is often used with aggregating statements such as with COUNT in this example. Other aggregate functions include AVG, SUM, and MIN or MAX, that are touched on further along the notebook. An alias is also used for the second column to provide context and as expected, Toronto has the most rentals out of the three cities.
 
-```powershell
-Write-Host "This is a powershell Code block";
-
-# There are many other languages you can use, but the style has to be loaded first
-
-ForEach ($thing in $things) {
-    Write-Output "It highlights it using the GitHub style"
-}
+```sql
+SELECT city, COUNT(city) AS TotalRentals
+FROM cleaned_rental_datasets.compiled_rentals
+GROUP BY city
+ORDER BY TotalRentals DESC
 ```
