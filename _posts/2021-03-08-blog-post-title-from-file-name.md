@@ -11,6 +11,7 @@ The SELECT DISTINCT statement returns only distinct/different values. Using the 
 SELECT DISTINCT city, housing_type
 FROM cleaned_rental_datasets.compiled_rentals
 ```
+<img width="462" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/07a8a01a-3a87-4596-a8a2-6535c9fa841b">
 
 #### Query 2: COUNT (with GROUP BY, ORDER BY, and ALIASES)
 The COUNT operator returns the number of rows that match your specified criteria while the ORDER BY operator sorts your results in order by the specified column. Meanwhile, the GROUP BY operator groups like-values and is often used with aggregating statements such as with COUNT in this example. Other aggregate functions include AVG, SUM, and MIN or MAX, that are touched on further along the notebook. An alias is also used for the second column to provide context and as expected, Toronto has the most rentals out of the three cities.
