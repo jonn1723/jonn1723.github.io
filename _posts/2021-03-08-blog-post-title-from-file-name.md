@@ -5,14 +5,14 @@ This is a notebook to track the SQL concepts that I've learnt with the queries a
 ---
 
 #### QUERY 1: SELECT DISTINCT
-The SELECT DISTINCT statement returns only distinct/different values. Using the following query, we can see that we are only looking at condos or apartments in the cities North York, Scarborough, and Toronto - parameters that I set when scraping the website. This query verifies that the parameters I set up are correct.!
+The SELECT DISTINCT statement returns only distinct/different values. Using the following query, we can see that we are only looking at condos or apartments in the cities North York, Scarborough, and Toronto - parameters that I set when scraping the website. This query verifies that the parameters I set up are correct.
 
-```tsql
+```sql
 SELECT DISTINCT city, housing_type
 FROM cleaned_rental_datasets.compiled_rentals
 ```
 
-#### Some PowerShell Code
+#### Query 2: COUNT (with GROUP BY, ORDER BY, and ALIASES)
 
 ```powershell
 Write-Host "This is a powershell Code block";
