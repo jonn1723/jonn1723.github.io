@@ -1,5 +1,2 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Hi, My name is Jonathan and I'm looking to transition from biotechnology into the data analytics field!
+This is a blog documenting the skills I've learnt so far in my journey transitioning into analytics.
