@@ -22,3 +22,6 @@ FROM cleaned_rental_datasets.compiled_rentals
 GROUP BY city
 ORDER BY TotalRentals DESC
 ```
+
+<img width="362" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/f9424127-70c6-4364-bac4-d4c7242808aa">
+
