@@ -26,7 +26,7 @@ driver = webdriver.Chrome(service=serv)
 # flight parameters
 leaving_from = 'yyz'
 going_to = 'yvr'
-departure_date = "Mar 28, 2023"
+departure_date = "May 28, 2023"
 results = 3
 refresh_rate = 180  # minutes
 
