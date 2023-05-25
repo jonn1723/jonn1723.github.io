@@ -4,14 +4,12 @@ This is a notebook to track the SQL concepts that I've learnt with the queries a
 
 ---
 
-#### QUERY 1: SELECT DISTINCT![image](https://github.com/jonn1723/jonn1723.github.io/assets/127183309/d2aaf238-9c1a-4d09-b5bc-662407497ef1)
-
+#### QUERY 1: SELECT DISTINCT
+The SELECT DISTINCT statement returns only distinct/different values. Using the following query, we can see that we are only looking at condos or apartments in the cities North York, Scarborough, and Toronto - parameters that I set when scraping the website. This query verifies that the parameters I set up are correct.!
 
 ```tsql
-SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
-    , REVERSE('abc')
-FROM dbo.SomeTable s
-    CROSS JOIN dbo.OtherTable o;
+SELECT DISTINCT city, housing_type
+FROM cleaned_rental_datasets.compiled_rentals
 ```
 
 #### Some PowerShell Code
