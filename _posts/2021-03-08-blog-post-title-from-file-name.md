@@ -156,6 +156,7 @@ AND size IS NOT NULL
 AND city = 'Toronto'
 AND housing_type = 'Apartment'
 ORDER BY cost_per_foot
+
 LIMIT 10
 ```
 <img width="468" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/e76ad771-3ad3-4a16-afb4-ae4cb58c9470">
