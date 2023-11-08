@@ -19,8 +19,16 @@ Just going over all the functions quickly:
 
 From our initial EDA, we learned about two key factors that have to be considered in this project. Initially, we're working with a relatively small dataset of 690 unique data points, which increases the risk of overfitting and constrains us to employ simpler models. Moreover, we encounter a data type issue, as three of our columns are of type "Object," whereas machine learning algorithms typically demand that all columns have a numeric data type.
 
-While little can be done about a small dataset, we can easily overcome the latter issue with a label encoder. A Label Encoder is a data preprocessing technique that transforms categorical data into numerical values. It assigns a unique integer to each category, making the data suitable for use in algorithms that require numerical input.
+While little can be done about a small dataset, we can easily overcome the latter issue with a label encoder. A Label Encoder is a data preprocessing technique from the scikit-learn (sklearn) library that transforms categorical data into numerical values. It assigns a unique integer to each category, making the data suitable for use in algorithms that require numerical input.
 
 <img width="902" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/303ae951-3b91-46d5-a749-61cff615693a">
 <img width="903" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/f672e1fa-c9c9-4707-a394-7b38566c6307">
 
+Features (x) are the measured inputs of the problem domain like independent variables while the target (y), is the dependent variable that we are attempting to predict and model. Therefore, features (x) are all the measurements besides the "Approval" column, which is why we drop that column specifically. The "axis = 1" indicates that we are dropping a column, not a row. Conversely, the target (y), is the "Approval" column only.
+
+After encoding our data, we quickly check to confirm that all our features now have a numerical dtype. Moving on, we use the train_test_split function from scikit-learn to split a dataset into training and testing sets. We set the test size as 25%, meaning that 25% of the data is allocated to the testing set to test against our trained model, and the remaining 75% is used for training. Lastly, random_state is a parameter that sets the seed for the random number generator, ensuring reproducibility of the split.
+
+<img width="904" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/bd403b8e-59cf-4005-a74f-49b7d31ccbf9">
+
+<img width="902" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/db731e50-a3b6-4677-9856-bacf78c5958e">
+<img width="904" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/6cf1e967-f22c-4cc1-b48c-bd3661623d8f">
