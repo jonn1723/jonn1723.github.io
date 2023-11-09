@@ -14,7 +14,7 @@ Just going over all the functions quickly:
 5. 'df.isnull().values.any()' checks for missing data to identify data gaps
 6. 'df.info()' provides metadata about the DataFrame to get an overview of the data's structure 
 
-<img width="903" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/a6079b69-1e15-4c83-8f29-027871680348">
+<img width="902" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/eabe4bdf-d44e-4ea5-8acb-bffea829b6f3">
 <img width="906" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/6377346d-5732-4b59-afac-e24aaf6af577">
 
 From our initial EDA, we learned about two key factors that have to be considered in this project. Initially, we're working with a relatively small dataset of 690 unique data points, which increases the risk of overfitting and constrains us to employ simpler models. Moreover, we encounter a data type issue, as three of our columns are of type "Object," whereas machine learning algorithms typically demand that all columns have a numeric data type.
