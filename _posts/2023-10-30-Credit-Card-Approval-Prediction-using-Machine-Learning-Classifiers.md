@@ -55,4 +55,6 @@ This is what the importance would look like only with Gradient Boost, without li
 
 <img width="1027" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/0c3e41d4-73cf-4088-8539-c46949e3ddc6">
 
-As we can see, features such as "PriorDefault" is weighted and valued too highly resulting in feature importance inflation while other features such as "Income" and "Employed" aren't valued enough. Of course, the exact algorithm isn't known, but feature importance inflation can be an indicator of overfitting, which we saw in the disparity between training and test accuracies. This exemplifies the power of deploying XGBoost when appropriate.
+As we can see, features such as "PriorDefault" is weighted and valued too highly resulting in feature importance inflation while other features such as "Employed" aren't valued enough. Of course, the exact algorithm isn't known, but feature importance inflation can be an indicator of overfitting, which we saw in the disparity between training and test accuracies. This exemplifies the power of deploying XGBoost when appropriate.
+
+Gradient Boost and XGBoost
