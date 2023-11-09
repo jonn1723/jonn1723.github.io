@@ -30,5 +30,11 @@ After encoding our data, we quickly check to confirm that all our features now h
 
 <img width="904" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/bd403b8e-59cf-4005-a74f-49b7d31ccbf9">
 
+The Gradient Boost Classifier is first initialized with a set random state for reproducibility while x_train are the feature variables and y_train is the corresponding target label used for training the model
+
+Keeping in mind that the dataset is split 75:25 for train to test data points, predict_train uses the previously trained model to make predictions on the training data while predict_test makes predictions on the testing data. Afterwards, the accuracy score is calculated by comparing the actual training labels (y_train) with the predicted label we just declared (predict_train). The accuracy score measures the fraction of correctly predicted labels in the training set.
+
 <img width="902" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/db731e50-a3b6-4677-9856-bacf78c5958e">
 <img width="904" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/6cf1e967-f22c-4cc1-b48c-bd3661623d8f">
+
+A higher training accuracy (0.98) compared to the test accuracy (0.86), is often an indication of overfitting. Overfitting occurs when a model learns the training data too well, capturing noise or random fluctuations in the data to the extent that it performs poorly on new, unseen data. To address this overfitting, we can use a specific library designed for gradient boosting where we can use XGBoost's gamma parameter to penalize overcomplex models that may result in overfitting of our model.
