@@ -47,3 +47,6 @@ While loss refers to how bad a model's prediction is, loss reduction indicates i
 Avoiding dataset memorization by our model may be another reason for tree-pruning and simpler models. With small datasets, there's a risk that an overly complex model memorizes the individual data points rather than learning the underlying patterns. When comparing gamma restricted accuracies to a lack of, we can see the plain Gradient Boost has a training accuracy of near 100%, suggesting potential memorization. While the test accuracy only increased by a mere 0.01, regulating your model complexity accordingly may pay dividends with larger or different data sets.
 
 Using the Pyplot library from the Matplotlib library, we can also visualize the importance and contribution of each individual feature on our machine learning algorithm.
+
+<img width="903" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/d5645928-1d5b-40ab-a2d0-5996b3e4b598">
+<img width="997" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/d79dc0fe-db7b-4860-a4c2-f366a3bcc068">
