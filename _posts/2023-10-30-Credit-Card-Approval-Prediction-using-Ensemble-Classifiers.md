@@ -49,4 +49,8 @@ Avoiding dataset memorization by our model may be another reason for tree-prunin
 Using the Pyplot library from the Matplotlib library, we can also visualize the importance and contribution of each individual feature on our machine learning algorithm.
 
 <img width="903" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/d5645928-1d5b-40ab-a2d0-5996b3e4b598">
-<img width="997" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/d79dc0fe-db7b-4860-a4c2-f366a3bcc068">
+<img width="1029" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/cc870f7f-1fb9-4935-81e0-4dabc2e3a773">
+
+This is what the importance would look like only with Gradient Boost, without limiting our tree complexity with XGB.
+<img width="1030" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/652f31af-6aa5-4b3b-b268-232ebc9e4be0">
+
