@@ -78,3 +78,4 @@ The confusion matrix is used to evaluate the accuracy of a classification and as
 
 The feature importance looks relatively similar when cross-referencing our Decision Tree model with XGBoost meaning that "PriorDefault" and "Employed" likely contribute most to the approval algorithm. 
 
+Logistic regression is generally a simpler and more interpretable model with fewer hyperparameters to tune, making it less prone to overfitting. This model is commonly used for binary classification problems
