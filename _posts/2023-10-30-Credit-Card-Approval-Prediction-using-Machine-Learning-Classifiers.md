@@ -67,9 +67,14 @@ The tree depth limit, often referred to as the "max depth" parameter, is a hyper
 <img width="902" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/7037fd3f-377b-43c1-97aa-aa5164687b6c">
 <img width="940" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/244bc0d7-256c-44ed-870d-2511e6e6c1eb">
 
+The "sweet spot" for a max_depth is often where the test accuracy starts to stabilize while the training accuracy is still reasonable. Visually, this would be where the test accuracy plateaus, and the gap between training and test accuracies is not too large. Judging from our data, a max_depth of 3 may be best to avoid our model from over or underfitting.
 
 <img width="901" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/30057103-bb80-44a3-abf8-e6999603f2ec">
 <img width="902" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/28fc58e3-9b08-47b1-9874-81b5f036fc56">
+<img width="940" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/a9048f12-11ae-498f-9efd-936694e5c1e6">
 <img width="1030" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/4711e6c9-0dde-4c1e-ac7d-bca6cf6112bd">
 
+The confusion matrix is used to evaluate the accuracy of a classification and assess where errors occurred. From top left to bottom right we have: True Negative, False Positive, False Negative, and True Positive. In a credit card approval situation, we are incorrectly rejecting around 25% of applicants while only correctly accepting applicants 55% of the time. Testing with various parameters shows that this trend is always more-or-less present and may likely be caused by the limited data set.
+
+The feature importance looks relatively similar when cross-referencing our Decision Tree model with XGBoost meaning that "PriorDefault" and "Employed" likely contribute most to the approval algorithm. 
 
