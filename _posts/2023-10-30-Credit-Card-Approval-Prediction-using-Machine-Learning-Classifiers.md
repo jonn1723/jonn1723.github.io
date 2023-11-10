@@ -58,3 +58,9 @@ This is what the importance would look like only with Gradient Boost, without li
 As we can see, features such as "PriorDefault" is weighted and valued too highly resulting in feature importance inflation while other features such as "Employed" aren't valued enough. Of course, the exact algorithm isn't known, but feature importance inflation can be an indicator of overfitting, which we saw in the disparity between training and test accuracies. This exemplifies the power of deploying XGBoost when appropriate.
 
 Gradient Boost and XGBoost are both considered emsemble models, meaning that they build a series of weak learners that correct the errors of previous ones. Decision trees are often the building blocks of ensemble classifiers so without considering computational cost and time, ensemble classifier are often the go-to over single decision trees for their accuracy and robustness against outliers. However, singular decision trees can also be used with a smaller data set such as with ours, and are often used as a benchmark against more complex ensemble models.
+
+<img width="901" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/30057103-bb80-44a3-abf8-e6999603f2ec">
+<img width="902" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/28fc58e3-9b08-47b1-9874-81b5f036fc56">
+<img width="1030" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/4711e6c9-0dde-4c1e-ac7d-bca6cf6112bd">
+
+The tree depth limit, often referred to as the "max depth" parameter, is a hyperparameter in decision tree algorithms that controls the maximum depth or height of the tree.
