@@ -83,4 +83,13 @@ Logistic regression is generally a simpler and more interpretable model with few
 <img width="943" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/3829d003-bebe-49f1-a9a1-024459fb84a4">
 <img width="942" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/0a38c987-e247-4ecb-a86d-f3475e3ba646">
 
-Besides "PriorDefault" which consistently tops the charts, the only other features that show any remote sign of correlation are "Employed" and "CreditScore"
+Besides "PriorDefault" which consistently tops the charts, the only other features that show any remote sign of correlation are "Employed" and "CreditScore". Additionally, Logistic Regression is sensitive towards outliers which is exacerbated by our small data set. Logistic regression also assumes that there is little or no multicollinearity among the independent variables. Logically speaking, features such as income and years employed are already likely high correlated. Regardless, we can attempt modelling with Logistic Regression and compare/contrast the confusion matrix.
+
+Min-Max Scaling adjusts the numerical features of a data set for adherence to a particular range or distribution to ensure that all features have a similar scale, preventing certain features from dominating the others and potentially affecting the model's performance. Subsequently, we use L1 regularization (lasso penalty) is used as we have prior context and suspect that many features might not greatly influence credit card approval outcomes. L1 regularization helps us focus only on features that are likely to have an impact on the target outcome while ignoring irrelevant features.
+
+<img width="941" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/b2502f88-22a9-413d-b6a8-d36e60868c49">
+<img width="943" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/fb386862-03fe-484a-9108-68d5aceb807c">
+
+Judging from the confusion matrices, Logistic Regression seems to have the best performance contrary to my initial hypothesis. Although many of the features don't have a linear relationship with our target and may display multicollinearity, a combination of avoiding overfitting and a binary classification problem may push Logistic Regression just above XGBoost.
+
+
