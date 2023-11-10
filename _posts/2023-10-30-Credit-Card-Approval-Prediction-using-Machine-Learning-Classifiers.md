@@ -57,4 +57,4 @@ This is what the importance would look like only with Gradient Boost, without li
 
 As we can see, features such as "PriorDefault" is weighted and valued too highly resulting in feature importance inflation while other features such as "Employed" aren't valued enough. Of course, the exact algorithm isn't known, but feature importance inflation can be an indicator of overfitting, which we saw in the disparity between training and test accuracies. This exemplifies the power of deploying XGBoost when appropriate.
 
-Gradient Boost and XGBoost
+Gradient Boost and XGBoost are both considered emsemble models, meaning that they build a series of weak learners that correct the errors of previous ones. Decision trees are often the building blocks of ensemble classifiers so without considering computational cost and time, ensemble classifier are often the go-to over single decision trees for their accuracy and robustness against outliers. However, singular decision trees can also be used with a smaller data set such as with ours, and are often used as a benchmark against more complex ensemble models.
