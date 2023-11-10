@@ -4,7 +4,7 @@ The dataset is taken from https://www.kaggle.com/datasets/samuelcortinhas/credit
 
 We start off by loading in the packages and libraries needed for the project followed by the dataset we will be using for this project. With any unfamiliar dataset, I like to preform some Exploratory Data Analysis (EDA) to better understand our data and what we're working with.
 
-<img width="1202" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/bb168fec-de4c-4ae4-af64-ac9fdfa6c60e">
+<img width="941" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/6306b85d-cb84-4956-8548-b7a56e66f87f">
 
 Just going over all the functions quickly:
 1. 'df.head()' shows the initial rows of the data allowing us to quickly inspect the data and understand its structure
@@ -78,4 +78,4 @@ The confusion matrix is used to evaluate the accuracy of a classification and as
 
 The feature importance looks relatively similar when cross-referencing our Decision Tree model with XGBoost meaning that "PriorDefault" and "Employed" likely contribute most to the approval algorithm. 
 
-Logistic regression is generally a simpler and more interpretable model with fewer hyperparameters to tune, making it less prone to overfitting. This model is commonly used for binary classification problems
+Logistic regression is generally a simpler and more interpretable model with fewer hyperparameters to tune, making it less prone to overfitting. This model is commonly used for binary classification problems and it assumes a linear relationship between the features and the log-odds of the outcome. If the relationship is highly nonlinear, more complex models like decision trees or ensemble methods may be better suited.
