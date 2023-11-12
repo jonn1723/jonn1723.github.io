@@ -98,3 +98,10 @@ Lastly, the final classification method we use is K-Nearest Neighbours (KNN). KN
 <img width="939" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/4d4bb553-3e29-48bf-ad1c-a4bdf4efc9c0">
 
 Using similar techniques from before, we set the number of neighbours as n, and use a simple for loop to evaluate the optimal number of neighbours. Judging from our visualization, it seems as if an n-value of 20 best balances accuracy and minimizes the risk for overfitting. However, when compared to the other classification methods, KNN does seem to fall short.
+
+Summary/Conclusion:
+  1. Built and trained five unique machine learning classifiers that are capable of predicting credit card approval outcomes.
+  2. Utilized common machine learning preprocessing steps such as Label Encoding and Feature Scaling
+  3. Showcased the features that are most likely to be the heavily weighted
+  4. Learned to tune various hyperparameters to prevent overfitting or underfitting
+  5. Through visualizations, displayed how various hyperparameters influence our accuracies, fitting, and confusion matrix
