@@ -92,4 +92,9 @@ Min-Max Scaling adjusts the numerical features of a data set for adherence to a 
 
 Judging from the confusion matrices, Logistic Regression seems to have the best performance contrary to my initial hypothesis. Although many of the features don't have a linear relationship with our target and may display multicollinearity, a combination of avoiding overfitting and a binary classification problem may push Logistic Regression just above XGBoost.
 
+Lastly, the final classification method we use is K-Nearest Neighbours (KNN). KNN is a non-parametric algorithm, meaning it doesn't make assumptions about the underlying data distribution and is considered a lazy learner as it doesn't build a model during training. This type of model doesn't work well with larger datasets since it memorizes the entire training dataset and makes predictions at runtime. KNN relies on the idea that similar data points should have similar outcomes so it makes predictions by consulting a prespecified number of neighbours with similar data points.
 
+<img width="937" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/ac3f58e1-9452-4345-95e7-12f2453cb467">
+<img width="939" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/4d4bb553-3e29-48bf-ad1c-a4bdf4efc9c0">
+
+Using similar techniques from before, we set the number of neighbours as n, and use a simple for loop to evaluate the optimal number of neighbours. Judging from our visualization, it seems as if an n-value of 20 best balances accuracy and minimizes the risk for overfitting. However, when compared to the other classification methods, KNN does seem to fall short.
