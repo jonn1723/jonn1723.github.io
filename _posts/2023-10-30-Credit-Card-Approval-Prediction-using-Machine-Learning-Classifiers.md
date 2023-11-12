@@ -97,7 +97,7 @@ Lastly, the final classification method we use is K-Nearest Neighbours (KNN). KN
 <img width="937" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/ac3f58e1-9452-4345-95e7-12f2453cb467">
 <img width="939" alt="image" src="https://github.com/jonn1723/jonn1723.github.io/assets/127183309/4d4bb553-3e29-48bf-ad1c-a4bdf4efc9c0">
 
-Using similar techniques from before, we set the number of neighbours as n, and use a simple for loop to evaluate the optimal number of neighbours. Judging from our visualization, it seems as if an n-value of 20 best balances accuracy and minimizes the risk for overfitting. However, when compared to the other classification methods, KNN does seem to fall short.
+Using similar techniques from before, we set the number of neighbours as n, and use a simple for loop to evaluate the optimal number of neighbours. Judging from our visualization, it seems as if an n-value of 20 best balances accuracy and minimizes the risk for overfitting. However, when compared to the other classification methods, KNN does seem to fall short. While XGBoost and Logistic Regression seem to perform best with this data set boasting the highest accuracies and lowest risk for over/underfitting, there are many factors that have to be considered when selecting the best classfier for each data set. 
 
 Summary/Conclusion:
   1. Built and trained five unique machine learning classifiers that are capable of predicting credit card approval outcomes.
