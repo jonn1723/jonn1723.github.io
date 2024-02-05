@@ -216,4 +216,4 @@ Conclusion and Key Takeaways:
 5. Open a new product line targeting less active individuals - a sizeable portion of active users (30%) are low active or sedentary users suggesting that they may be using Bellabeat products for design, quality, or ease-of-use
 6. Add features to the Bellabeat app that would encourage users to use it more frequently
 
-Thank you for reading to the end of my first project in R
+Thank you for reading to the end of my first project in R!
