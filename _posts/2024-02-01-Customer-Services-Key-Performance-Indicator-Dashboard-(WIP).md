@@ -1,0 +1,1 @@
+I'm currently enrolled in the Microsoft Power BI Data Analyst Professional Certificate and wanted to consolidate what I've learnt so far by doing a hands-on project. This dashboard attempts to help visualize the crucial KPIs in a 
