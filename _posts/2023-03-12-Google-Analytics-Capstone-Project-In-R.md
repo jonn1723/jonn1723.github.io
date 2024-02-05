@@ -1,6 +1,6 @@
 Bellabeat Case Study Capstone Project:
 
-The complete project with all code outputs can be found here: https://www.kaggle.com/code/jonathanliu9/bellabeat-case-study-with-r
+The complete project with all code outputs can be found here: https://www.kaggle.com/code/jonathanliu9/bellabeat-case-study-with-r.
 
 This case study is an optional capstone project provided by the Google Data Analytics Certificate, which consists of 8-courses that provided me with the necessary skills needed to flouish as a data analyst. In this course, I learnt both hard skills working with Microsoft Excel, SQL, Tableau, and R programming, as well as soft skills including problem solving, critical thinking, and presentation skills. This capstone project helped consolidate what I've learnt and visits each phase of data analysis in-depth.
 
