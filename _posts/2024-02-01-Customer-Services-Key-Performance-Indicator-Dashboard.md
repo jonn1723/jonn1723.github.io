@@ -35,7 +35,7 @@ Spending too long interacting with the IVR system will increase customer dissati
 Using a combination of a line & stacked column chart and a donut chart, the final dashboard looks like this:
 ![image](https://github.com/jonn1723/jonn1723.github.io/assets/127183309/b5679cab-325f-4c19-ad92-1c73c88a6304)
 
-
+The line chart displays the average respective KPI for that month while the stacked bar chart indicates the total amount of calls that month, and how many calls exceeded or within the threshold.
 
 The slicer located in the "Request Type Breakdown" chart is a dropdown that allows for filtering by month. For each request type, we can also see the average time needed for the CSR to resolve the request.
 ![image](https://github.com/jonn1723/jonn1723.github.io/assets/127183309/13baefe9-f198-4d7f-b026-c090fff34c9e)
