@@ -40,4 +40,4 @@ The line chart displays the average respective KPI for that month while the stac
 The slicer located in the "Request Type Breakdown" chart is a dropdown that allows for filtering by month. For each request type, we can also see the average time needed for the CSR to resolve the request.
 ![image](https://github.com/jonn1723/jonn1723.github.io/assets/127183309/13baefe9-f198-4d7f-b026-c090fff34c9e)
 
-That's it for my project for now! As I continue to learn, I'll be updating or creating new dashboard to help consolidate what I learnt in the course. Any suggestions or feedback would be highly appreciated!
+That's it for my project for now! As I continue to learn, I'll be updating or creating new dashboard to help consolidate what I learnt in the course. Any suggestions or feedback would be greatly appreciated!
