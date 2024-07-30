@@ -1,4 +1,4 @@
-# Toronto Rentals Scraping with Python: Beautiful Soup and Selenium
+# Toronto Rentals Scraping
 
 I was interested in the Toronto Rental market but wasn't able to find any datasets online. Having experience with Selenium already, I decided to try my hand at scraping an online rental market using BeautifulSoup. However, The website turned out to be a dynamic interface requiring the use of Selenium as well to interact with various elements on the website. I then used Microsoft Excel to clean all the data before exporting it as a CSV into BigQuery for the next step of my project. The code is as follows:
 
